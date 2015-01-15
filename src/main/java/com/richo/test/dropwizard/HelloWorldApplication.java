@@ -43,10 +43,6 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration>
 		);
 
 		environment.jersey().register(resource);
-		/**
-		 * This is indented to put all resources under /api so that it does not conflict with the static content
-		 */
-		environment.jersey().setUrlPattern("/api/*");
 	}
 
 }
